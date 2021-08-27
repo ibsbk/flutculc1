@@ -292,7 +292,16 @@ class _MyAppState extends State<MyApp> {
                       children:[
                         Container(
                           padding: const EdgeInsets.all(20),
-                          child: Text(''),
+                          child: TextButton(onPressed: (){
+                            setState(() {
+                              nowNumber = '';
+                              equalNumber = 0;
+                              firstNumber = 0;
+                              secondNumber = 0;
+                              move = '';
+                            });
+                          },
+                          child: Text('CE'),),
                         )
                       ]
                   ),
